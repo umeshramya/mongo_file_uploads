@@ -7,8 +7,15 @@ const multer = require('multer');
 const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
+const cors = require("cors")
 
 const app = express();
+
+app.use(cors({
+  // CORS cross origin resource sharing needed as react runs on defferient port/server
+  origin : "*",
+  credentials : true
+}));
 
 // Middleware
 app.use(bodyParser.json());
