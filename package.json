@@ -4,10 +4,10 @@
   "description": "Simple app to upload files to MongoDB",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "start": "node app.js",
-    "dev": "nodemon app.js"
   },
-    "engines": {
+  "engines": {
     "node": "10"
   },
   "author": "",
